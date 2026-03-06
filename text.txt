@@ -1,0 +1,7 @@
+ssh -i "flashcard-keypair.pem" ubuntu@13.232.174.179
+
+docker run -d \
+  -p 8080:80 \
+  kanin0050/flashcard-repo:latest
+
+http://<EC2-IP>:8080
